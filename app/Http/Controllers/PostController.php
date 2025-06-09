@@ -32,7 +32,12 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        //
+        $post=Post::create($request->validated());
+        if ($post){
+            return to_route('posts.index');
+        }else{
+            return to_route('posts.create');
+        }
     }
 
     /**
