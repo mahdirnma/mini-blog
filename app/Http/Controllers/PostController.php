@@ -53,7 +53,8 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        $categories = Category::where('is_active',1)->get();
+        return view('posts.update', compact('post','categories'));
     }
 
     /**
