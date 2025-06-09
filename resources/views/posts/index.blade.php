@@ -25,7 +25,7 @@
                     @foreach($posts as $post)
                         <tr>
                             <td class="text-center">
-                                <form action="{{--{{route('categories.destroy',compact('category'))}}--}}" method="post">
+                                <form action="{{route('posts.destroy',compact('post'))}}" method="post">
                                     @csrf
                                     @method('delete')
                                     <button type="submit" class="text-green-600 cursor-pointer">delete</button>
