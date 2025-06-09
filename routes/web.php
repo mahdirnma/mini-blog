@@ -23,3 +23,4 @@ Route::get('/register', [AuthController::class,'registerForm'])->name('register.
 Route::post('/register', [AuthController::class,'register'])->name('register');
 
 Route::resource('/categories', CategoryController::class);
+Route::resource('/posts', PostController::class);
