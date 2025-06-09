@@ -62,7 +62,12 @@ class PostController extends Controller
      */
     public function update(UpdatePostRequest $request, Post $post)
     {
-        //
+        $status=$post->update($request->validated());
+        if ($status){
+            return to_route('posts.index');
+        }else{
+            return to_route('posts.create');
+        }
     }
 
     /**

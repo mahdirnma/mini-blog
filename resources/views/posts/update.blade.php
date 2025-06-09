@@ -27,7 +27,7 @@
                             <p class="text-red-700">{{$message}}</p>
                             @enderror
                         </div>
-                        <input type="submit" value="Add" class="absolute bottom-2 -left-10 text-white bg-gray-700 py-3 px-7 cursor-pointer rounded">
+                        <input type="submit" value="Update" class="absolute bottom-2 -left-10 text-white bg-gray-700 py-3 px-7 cursor-pointer rounded">
                     </div>
                     <div class="w-1/2 h-full flex flex-col items-end pr-20">
                         <div class="w-5/6 h-auto flex flex-row-reverse justify-between pt-4 mb-6">
