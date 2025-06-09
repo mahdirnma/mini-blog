@@ -24,7 +24,7 @@
                     @foreach($categories as $category)
                         <tr>
                             <td class="text-center">
-                                <form action="{{--{{route('products.destroy',compact('product'))}}--}}" method="post">
+                                <form action="{{route('categories.destroy',compact('category'))}}" method="post">
                                     @csrf
                                     @method('delete')
                                     <button type="submit" class="text-green-600 cursor-pointer">delete</button>
